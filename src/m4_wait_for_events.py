@@ -94,6 +94,8 @@ def sum_until_prime_input():
     # TODO: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    x = int(input('Enter an integer greater than 1: '))
+    
 
 
 def run_test_next_prime():
