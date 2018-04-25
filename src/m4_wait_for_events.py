@@ -200,6 +200,9 @@ def next_prime(m):
     # IMPLEMENTATION REQUIREMENT:
     #    -- Use (call) the   is_prime   function above appropriately.
     # ------------------------------------------------------------------
+    #for k in range(m):
+       # if
+
 
 
 def run_test_prime_gap():
