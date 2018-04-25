@@ -94,14 +94,21 @@ def sum_until_prime_input():
     # TODO: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-    x = int(input('Enter an integer greater than 1: '))
-    
+    total = 0
+    while True:
+        x = int(input('Enter an integer greater than 1: '))
+        total = total + x
+        if is_prime(x):
+            break
+    return total
+
+
 
 
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # DONE: 3. Implement this TEST function.
     #   It TESTS the  wait_for_prime  function defined below.
     #   Include at least  ** 6 **  tests. (We supplied 5 tests for you.)
     #
@@ -165,7 +172,10 @@ def run_test_next_prime():
     # Test 6:
     print()
     print('TEST STARTED!  Has it ended?')
-
+    expected = 7
+    actual = next_prime(6)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
     print('TEST ENDED!')
 
 
